@@ -36,9 +36,9 @@ function App() {
             <TabButton onSelect={() => handelSelect('props')}>Props</TabButton>
             <TabButton onSelect={() => handelSelect('state')}>State</TabButton>
           </menu>
-          {!selectedTopic && <p>Please select a topic</p>}
-          {selectedTopic && 
-          (<div id="tab-content">
+          {!selectedTopic ? (<p>Please select a topic</p>) : null}
+          {selectedTopic ? 
+          <div id="tab-content">
           <h3>{EXAMPLES[selectedTopic].title}</h3>
           <p>{EXAMPLES[selectedTopic].description}</p>
           <pre>
@@ -46,7 +46,7 @@ function App() {
             {EXAMPLES[selectedTopic].code}
             </code>
           </pre>
-        </div>)}
+        </div> : null}
         </section>
       </main>
     </div>
