@@ -8,16 +8,16 @@ function getRanmdomInt(max) {
 }
 
 export default function Header() {
-    const descriptions = reactDescriptions[getRanmdomInt(2)];
+  const descriptions = reactDescriptions[getRanmdomInt(2)];
   
-    return (
-      <header>
-        <img src={Img} alt="Stylized atom" />
-        <h1>React Essentials</h1>
-        <p>
-          {descriptions} React concepts you will need for almost any app you are
-          going to build!
-        </p>
-      </header>
-    );
-  }
+   return (
+    <header>
+      <img src={Img} alt="Stylized atom" />
+      <h1>React Essentials</h1>
+      <p>
+        {descriptions} React concepts you will need for almost any app you are
+        going to build!
+      </p>
+    </header>
+  );
+}
