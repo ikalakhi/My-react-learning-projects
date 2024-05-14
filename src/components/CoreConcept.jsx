@@ -1,9 +1,9 @@
-export default function CoreConcept({image, titel, description}) {
-    return(
-        <li>
-        <img src={image} alt="..."/>
-        <h3>{titel}</h3>
-        <p>{description}</p>
-        </li>
-    );
+export default function CoreConcept({ image, title, description }) {
+  return (
+    <li>
+      <img src={image} alt={title} />
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </li>
+  );
 }
